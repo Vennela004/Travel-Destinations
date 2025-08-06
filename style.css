@@ -1,0 +1,19 @@
+h1{
+    font-size: xx-large;
+    font-family:fantasy;
+}
+.hover-card {
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+.hover-card:hover {
+  transform: scale(1.02);
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+
+.modal-content {
+  background: white;
+  padding: 2rem;
+  border-radius: 10px;
+}
