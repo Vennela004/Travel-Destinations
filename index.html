@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Wanderlogue </title>
+
+  
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <section class="section">
+    <div class="container">
+      <h1 class="title has-text-centered" >Wanderlogue!!!</h1>
+      <div class="columns is-multiline">
+
+       
+        <div class="column is-one-third">
+          <div class="card hover-card" onclick="openModal('modal-paris')">
+            <div class="card-image">
+              <figure class="image is-4by3">
+                <img src="paris.jpg.jpg" alt="Paris">
+              </figure>
+            </div>
+            <div class="card-content">
+              <p class="title is-5">Paris</p>
+              <p>Experience the romance and charm of the Eiffel Tower and the Seine River.</p>
+            </div>
+          </div>
+        </div>
+
+        
+        <div class="column is-one-third">
+          <div class="card hover-card" onclick="openModal('modal-tokyo')">
+            <div class="card-image">
+              <figure class="image is-4by3">
+                <img src="tokyo.jpg.jpg" alt="Tokyo">
+              </figure>
+            </div>
+            <div class="card-content">
+              <p class="title is-5">Tokyo</p>
+              <p>Explore futuristic skylines, sushi bars, and ancient temples in Japan's capital.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="column is-one-third">
+          <div class="card hover-card" onclick="openModal('modal-sydney')">
+            <div class="card-image">
+              <figure class="image is-4by3">
+                <img src="sydney.jpg" alt="Sydney">
+              </figure>
+            </div>
+            <div class="card-content">
+              <p class="title is-5">Sydney</p>
+              <p>Discover the iconic Opera House and beautiful Bondi Beach.</p>
+            </div>
+          </div>
+        </div>
+
+            <div class="column is-one-third">
+    <div class="card hover-card" onclick="openModal('modal-nyc')">
+        <div class="card-image">
+        <figure class="image is-4by3">
+            <img src="new york.jpg" alt="New York City">
+        </figure>
+        </div>
+        <div class="card-content">
+        <p class="title is-5">New York City</p>
+        <p>The city that never sleeps—home to skyscrapers, Broadway, and Times Square.</p>
+        </div>
+    </div>
+    </div>
+
+       <div class="column is-one-third">
+    <div class="card hover-card" onclick="openModal('modal-rome')">
+    <div class="card-image">
+      <figure class="image is-4by3">
+        <img src="rome.jpg" alt="Rome">
+      </figure>
+    </div>
+    <div class="card-content">
+      <p class="title is-5">Rome</p>
+      <p>Walk among ancient ruins, taste true Italian pasta, and explore the Eternal City.</p>
+    </div>
+  </div>
+</div>
+
+    <div class="column is-one-third">
+  <div class="card hover-card" onclick="openModal('modal-bali')">
+    <div class="card-image">
+      <figure class="image is-4by3">
+        <img src="bali.jpg" alt="Bali">
+      </figure>
+    </div>
+    <div class="card-content">
+      <p class="title is-5">Bali</p>
+      <p>Find peace in tropical temples, surf beaches, and lush rice terraces.</p>
+    </div>
+  </div>
+</div>
+
+      </div>
+    </div>
+  </section>
+
+  
+  <div id="modal-paris" class="modal">
+    <div class="modal-background" onclick="closeModal('modal-paris')"></div>
+    <div class="modal-content box">
+      <h2 class="title is-4">Paris, France</h2>
+      <p>From croissants and coffee at a café to sunset views from the Eiffel Tower, Paris never disappoints. Walk through the Louvre, take a cruise on the Seine, and soak in the Parisian culture.</p>
+    </div>
+    <button class="modal-close is-large" aria-label="close" onclick="closeModal('modal-paris')"></button>
+  </div>
+
+  
+  <div id="modal-tokyo" class="modal">
+    <div class="modal-background" onclick="closeModal('modal-tokyo')"></div>
+    <div class="modal-content box">
+      <h2 class="title is-4">Tokyo, Japan</h2>
+      <p>Tokyo is a dazzling mix of tradition and technology. Visit Shibuya Crossing, eat fresh sushi at Tsukiji Market, and relax at a peaceful shrine—all in the same day!</p>
+    </div>
+    <button class="modal-close is-large" aria-label="close" onclick="closeModal('modal-tokyo')"></button>
+  </div>
+
+
+  <div id="modal-sydney" class="modal">
+    <div class="modal-background" onclick="closeModal('modal-sydney')"></div>
+    <div class="modal-content box">
+      <h2 class="title is-4">Sydney, Australia</h2>
+      <p>Explore the Sydney Harbour, catch a show at the Opera House, or hit the waves at Bondi Beach. Sydney offers urban adventure and beachside bliss.</p>
+    </div>
+    <button class="modal-close is-large" aria-label="close" onclick="closeModal('modal-sydney')"></button>
+  </div>
+
+  <div id="modal-nyc" class="modal">
+  <div class="modal-background" onclick="closeModal('modal-nyc')"></div>
+  <div class="modal-content box">
+    <h2 class="title is-4">New York City, USA</h2>
+    <p>From the lights of Broadway to the views from the Empire State Building, NYC is a fast-paced dream filled with culture, art, and global energy.</p>
+  </div>
+  <button class="modal-close is-large" aria-label="close" onclick="closeModal('modal-nyc')"></button>
+</div>
+
+  <div id="modal-rome" class="modal">
+  <div class="modal-background" onclick="closeModal('modal-rome')"></div>
+  <div class="modal-content box">
+    <h2 class="title is-4">Rome, Italy</h2>
+    <p>Home to the Colosseum and Vatican City, Rome blends ancient history with modern Italian charm. Every street is a story waiting to be told.</p>
+  </div>
+  <button class="modal-close is-large" aria-label="close" onclick="closeModal('modal-rome')"></button>
+</div>
+
+    <div id="modal-bali" class="modal">
+  <div class="modal-background" onclick="closeModal('modal-bali')"></div>
+  <div class="modal-content box">
+    <h2 class="title is-4">Bali, Indonesia</h2>
+    <p>Whether you're chasing waves or meditating in temples, Bali offers the perfect escape into nature, spirituality, and exotic beauty.</p>
+  </div>
+  <button class="modal-close is-large" aria-label="close" onclick="closeModal('modal-bali')"></button>
+</div>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
